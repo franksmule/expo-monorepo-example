@@ -1,3 +1,5 @@
+## Modified to remove hoisted linking, update to Expo 50 Alpha 
+### Original: https://github.com/byCedric/expo-monorepo-example
 <div align="center">
   <h1>Expo monorepo</h1>
   <p>Fast pnpm monorepo for cross-platform apps built with Expo and React</p>

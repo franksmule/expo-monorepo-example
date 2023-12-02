@@ -19,7 +19,8 @@
     "ios": {
       "bundleIdentifier": "com.bycedric.expomonorepo",
       "buildNumber": "1.0.0",
-      "supportsTablet": true
+      "supportsTablet": true,
+      "deploymentTarget": "13.4"
     },
     "android": {
       "package": "com.bycedric.expomonorepo",

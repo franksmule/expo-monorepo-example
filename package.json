@@ -22,6 +22,12 @@
         "expo-modules-*",
         "typescript"
       ]
+    },
+    "overrides": {
+      "react-native": "0.72.4"
+    },
+    "patchedDependencies": {
+      "expo-modules-autolinking@1.8.0": "patches/expo-modules-autolinking@1.8.0.patch"
     }
   },
   "prettier": {

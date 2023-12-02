@@ -1,0 +1,13 @@
+diff --git a/scripts/ios/project_integrator.rb b/scripts/ios/project_integrator.rb
+index bddfa0defde321fd909b5496946fd26e206d5e67..b26612259cf85393e02fe94f553b18c6cb882d3d 100644
+--- a/scripts/ios/project_integrator.rb
++++ b/scripts/ios/project_integrator.rb
+@@ -258,7 +258,7 @@ module Expo
+         fi
+       }
+ 
+-      with_node --no-warnings --eval "require(\'expo-modules-autolinking\')(process.argv.slice(1))" generate-package-list #{args} --target "#{modules_provider_path}"
++      with_node --no-warnings --eval "require(require.resolve(\'expo-modules-autolinking\', { paths: [\'#{__dir__}\']}))(process.argv.slice(1))" generate-package-list #{args} --target "#{modules_provider_path}"
+       SUPPORT_SCRIPT
+     end
+ 

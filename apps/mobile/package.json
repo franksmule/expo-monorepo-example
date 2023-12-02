@@ -6,24 +6,30 @@
   "scripts": {
     "dev": "expo start",
     "lint": "eslint --ext js,ts,tsx .",
+    "prebuild": "expo prebuild --template ./expo-template-bare-minimum-50.0.7.tgz",
     "build": "expo export --output-dir ./build --platform all",
     "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
+    "android": "expo run:android",
+    "ios": "expo run:ios",
     "web": "expo start --web",
     "eas-build-pre-install": "npm install --global pnpm@7.x",
     "eas-build-post-install": "pnpm run -w build:mobile"
   },
   "dependencies": {
     "@acme/feature-home": "*",
-    "expo": "^49.0.10",
-    "expo-dev-client": "~2.4.8",
-    "expo-status-bar": "~1.6.0",
-    "expo-updates": "~0.18.10",
+    "@babel/runtime": "^7.23.5",
+    "@react-native/assets-registry": "^0.74.0",
+    "expo": "50.0.0-alpha.7",
+    "expo-asset": "8.14.0",
+    "expo-dev-client": "3.3.0",
+    "expo-splash-screen": "0.25.0",
+    "expo-status-bar": "1.10.0",
+    "metro-cache": "^0.80.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-native": "0.72.4",
-    "react-native-web": "~0.19.6"
+    "react-native-web": "~0.19.6",
+    "whatwg-url-without-unicode": "8.0.0-3"
   },
   "devDependencies": {
     "@acme/eslint-config": "*",
